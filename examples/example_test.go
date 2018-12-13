@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Wealthforge-Technologies/docusign"
+	"github.com/BANKEX/go-docusign"
 	"golang.org/x/net/context"
 )
 

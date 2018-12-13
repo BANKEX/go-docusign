@@ -25,8 +25,8 @@ import (
 )
 
 const (
-	Version   = "0.5"
-	userAgent = "docusign-api-go-client/" + Version
+	Version   = "0.1.0"
+	userAgent = "go-docusign-api-client/" + Version
 )
 
 /*  Documentation: https://docs.docusign.com/esign/

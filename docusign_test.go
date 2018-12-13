@@ -51,7 +51,8 @@ func TestCalls(t *testing.T) {
 	testTemplateId = os.Getenv("DOCUSIGN_TEMPLATEID")
 	testToken := os.Getenv("DOCUSIGN_TOKEN")
 
-	testTemplateId = "321d2832-1244-48f7-a6db-949c2cd319c0"
+	// testTemplateId = "321d2832-1244-48f7-a6db-949c2cd319c0"
+	testTemplateId = os.Getenv("DOCUSIGN_TEMPLATEID")
 	cfg := &Config{
 		UserName:      os.Getenv("DOCUSIGN_USERNAME"),
 		Password:      os.Getenv("DOCUSIGN_PASSWORD"),
@@ -59,8 +60,8 @@ func TestCalls(t *testing.T) {
 		AccountId:     os.Getenv("DOCUSIGN_ACCTID"),
 		Host:          os.Getenv("DOCUSIGN_HOST"),
 	}
-	cfg.UserName = "0ba0d798-49ca-43c3-88dc-840d6bcb37af"
-	cfg.Password = "1DLfrdLa/68U4uzty+pAhM3TUTg="
+	// cfg.UserName = "0ba0d798-49ca-43c3-88dc-840d6bcb37af"
+	// cfg.Password = "1DLfrdLa/68U4uzty+pAhM3TUTg="
 
 	if cfg.UserName == "" || cfg.Password == "" || cfg.IntegratorKey == "" || cfg.AccountId == "" {
 		t.Errorf("Invalid Config")
